@@ -14,7 +14,7 @@ Hej! Vi är Marcus, Jimmy och Bam. Välkommen till vårt projekt, **Tekle Negusa
     - ***Sensor***
     - ***Databas***
     - ***Frontend***
-2. ***Rutiner***
+2. **Rutiner***
 3. **Tekniska Färdigheter**
 
 ---
