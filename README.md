@@ -10,13 +10,12 @@ Hej! Vi är Marcus, Jimmy och Bam. Välkommen till vårt projekt, **Tekle Negusa
 
 ## 📋 Innehållsförteckning
 
-1. [Systemkrav]
-    - [Sensor]
-    - [Databas]
-    - [Frontend]
-2. [Gruppdynamik]
-3. [Rutiner]
-4. [Tekniska Färdigheter]
+1. **Systemkrav**
+    - ***Sensor***
+    - ***Databas***
+    - ***Frontend***
+2. ***Rutiner***
+3. **Tekniska Färdigheter**
 
 ---
 
