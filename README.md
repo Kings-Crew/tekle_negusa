@@ -4,7 +4,7 @@
 
 ### Inledning
 
-Hej! Vi är Marcus, Jimmy och Bam. Välkommen till vårt projekt, **Tekle Negusa: IoT-Personräknaren**. Detta är en del av vår kurs "Datorkommunikation, Nätverk & Konnektivitet". Tekle Negusa är en personräknare byggd med 🔗[Arduino Rev 4 ](https://www.kjell.com/se/produkter/el-verktyg/elektronik/utvecklingskit/arduino/utvecklingskort/arduino-uno-rev4-wifi-utvecklingskort-p88079) utvecklad för att spåra antalet personer som passerar genom en specifik plats. Genom att använda IoT-teknik och smarta sensorer har vi skapat en robust och pålitlig lösning för att samla in och analysera rörelsedata i realtid.
+Hej! Vi är Marcus, Jimmy och Bam. Välkommen till vårt projekt, **Tekle Negusa: IoT-Personräknaren**. Detta är en del av vår kurs "Datorkommunikation, Nätverk & Konnektivitet". Tekle Negusa är en personräknare byggd med 🔗[Arduino Rev 4 ](https://www.kjell.com/se/produkter/el-verktyg/elektronik/utvecklingskit/arduino/utvecklingskort/arduino-uno-rev4-wifi-utvecklingskort-p88079) utvecklad för att spåra antalet personer som passerar genom en specifik plats. Genom att använda IoT-teknik och sensorer har vi skapat en robust och pålitlig lösning för att samla in och analysera rörelsedata i realtid.
 
 
 
