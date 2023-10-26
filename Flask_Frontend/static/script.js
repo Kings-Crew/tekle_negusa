@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
 
-    // Listen to updates from the server using SSE
-    var evtSource = new EventSource("/counter-increment");
+    var evtSource = new EventSource("/counter");
     evtSource.onmessage = function(event) {
+        EventSource.prototype.withCredentials = true;
+        console.log("Received data:", event.data); 
         var count = parseInt(event.data, 10);  // Convert the received data to an integer
 
         var tens = Math.floor(count / 10);
