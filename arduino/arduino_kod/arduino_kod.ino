@@ -3,7 +3,7 @@
 char ssid[] = "Wi-Fi";
 char pass[] = "Lösenord";
 
-char server[] = char server[] = "192.168.1.129";  
+char server[] = "192.168.1.129";  
 
 
 WiFiClient client;
