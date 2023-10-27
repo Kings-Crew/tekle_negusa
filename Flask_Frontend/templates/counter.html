@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+
+<body> <!-- Body section of the HTML document -->
+
+    <!-- A div element representing the hundreds' place of the counter. 
+         The 'data-js' attribute is used to select this element in JavaScript -->
+    <div class="Counter-unit" data-js="counter-hundreds">
+        <!-- Display the current value of the hundreds' place -->
+        <div class="Counter-number" data-js="current">0</div>
+
+        <!-- Display the next value of the hundreds' place. It's used during animations -->
+        <div class="Counter-number" data-js="next">0</div>
+    </div>
+
+    <!-- A div element representing the tens' place of the counter -->
+    <div class="Counter-unit" data-js="counter-tens">
+        <!-- Display the current value of the tens' place -->
+        <div class="Counter-number" data-js="current">0</div>
+
+        <!-- Display the next value of the tens' place -->
+        <div class="Counter-number" data-js="next">0</div>
+    </div>
+
+    <!-- A div element representing the ones' place of the counter -->
+    <div class="Counter-unit" data-js="counter-ones">
+        <!-- Display the current value of the ones' place -->
+        <div class="Counter-number" data-js="current">0</div>
+
+        <!-- Display the next value of the ones' place -->
+        <div class="Counter-number" data-js="next">0</div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body> 
+</html> 

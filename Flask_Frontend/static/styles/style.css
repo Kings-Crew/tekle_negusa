@@ -1,0 +1,29 @@
+html, body {
+    background-color: #222222;
+    height: 100%;
+  }
+  
+  body {
+    align-items: center;
+    color: #dddddd;
+    display: flex;
+    font: 100px Helvetica;
+    justify-content: center;
+  }
+  
+  .Counter {
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .Counter-number {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .Counter-unit.is-changing {
+    transform: translateY(-100px);
+    transition: transform 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
