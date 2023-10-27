@@ -65,8 +65,8 @@ Eftersom det är enklare och mer effektivt för vårt projekt.
 ## 🛠 Tekniska Färdigheter
 
 - **Kommunikationsprotokoll**: Pub/Sub, Kafka, SQS, Pusher, MQTT
-- **Databashantering**: SQL/NoSQL
-- **IoT programvara**: NiFi, MiniFi
+- **Databashantering**: MongoDB
+- **IoT programvara**: Arduino Rev 4
 - **Övergripande kunskap inom IoT**: Säkerhet, Roll-out, Uppstart, Patchning/Uppdatering
 
 ---
