@@ -1,4 +1,4 @@
-#Här definieras ett pydantiskt schema som representerar hur sensordata kommer att lagras MongoDB atlas-databas.
+#Här definieras ett pydantiskt schema som git.
 
 class StudentSchema(BaseModel):
     sensorvalue: str = Field(...)
