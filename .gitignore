@@ -22,3 +22,4 @@ htmlcov/
 .coverage
 .coverage.*
 *,cover
+Database_CMC/__pycache__/api_database.cpython-310.pyc
