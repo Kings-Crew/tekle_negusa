@@ -1,22 +1,14 @@
-# Import necessary modules from FastAPI, as well as the random and time modules.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import random
-import time
+import json
 
-# Instantiate the FastAPI application.
 app = FastAPI()
 
-# Define a list of origins (frontends) that are allowed to access this backend.
-# In this case, it's the frontend running on "http://localhost:5000" and "http://127.0.0.1:5000".
 origins = [
     "http://localhost:5000",
     "http://127.0.0.1:5000",
 ]
 
-# Add CORS (Cross-Origin Resource Sharing) middleware to the FastAPI application.
-# This setup allows the listed origins to make requests to this backend 
-# without facing cross-origin issues.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -25,19 +17,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Define a route for the GET request to '/db/api/endpoint'.
 @app.get('/db/api/endpoint')
 def syntethic_data():
-    var = 0
-    # Run a loop for a random number of iterations between 1 and 5.
-    for _ in range(random.randint(1, 5)):
-        # Pause the execution for a random duration between 1 and 5 seconds.
-        time.sleep(random.randint(1, 5))
-        var += 1  # Increment the 'var' for each iteration.
-    return {"data": var}  # Return the final value of 'var' as a JSON response.
+    with open('posts.json', 'r') as file:  # Open the JSON file.
+        posts = json.load(file)  # Load the JSON content.
+    number_of_posts = len(posts["posts"])  # Count the number of posts.
+    return {"data": number_of_posts}  # Return the count as data.
 
-# If this script is being run directly (as opposed to being imported), 
-# start the FastAPI development server using Uvicorn.
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)  # Start the server on port 8000.
+    uvicorn.run(app, host="0.0.0.0", port=8000)
