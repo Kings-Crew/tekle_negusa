@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='favicon/favicon.png') }}" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="center-div">
         <p class="small-text">Number of people</p>
-        <p class="big-text">{{ element }}</p>
+        <p class="big-text" id="count">{{ count }}</p>
     </div>
-    <!-- Display the counter value fetched from the FastAPI endpoint -->
-   <!--<h2>Counter Value: {{ counter_value }}</h1> -->
-</body> 
+
+    <script>
+        function updateCount() {
+            $.get("http://127.0.0.1:8000/allsensor/", function(data) {
+                var count = data.length;
+                $('#count').text(count);
+            });
+        }
+        // Update the count every 5 seconds
+        setInterval(updateCount, 5000);
+    </script>
+</body>
 </html>
